@@ -1,0 +1,108 @@
+  
+
+Topics:
+
+  Window Utilities:
+    Storage:
+      localStorage:
+        has no expiry the data put in stays on forever untill we manualy clean wither via code, or in browser
+      sessionStorage
+        data stored in sessionStorage gets removed after closing the page session --> tab
+
+  Events:
+
+    classlist toggle
+
+    addEventListner:
+      click --> div, button
+      DOMContentLoaded --> document
+      mouseover --> any
+      mouseleave --> any
+      change --> input
+      submit --> form
+
+
+    removeEventListener -- events can only be removed with named callback function
+
+    options in eventListener:
+      once: boolean value to tell whether event should execute only once
+
+    2. Concepts in events
+
+      1. Propagation --> events propagate through inner <-> outer between related elements
+
+      Way of Propagation:
+        1. Default - Bubbling (inner to outer or child to parent) ---> propagation of events from innerMost child to outermost parent 
+        2. Capturing (outer to inner) ---> event progation of events from outermost parent to innermost child
+
+        stopProgation func for an event:
+  
+  Callback:
+
+    callback function ---> a function reference/definition which is used an arguement to another function to execute a set of statements
+
+    Disadvantage Of Callback:
+      callback hell
+
+
+  Example Task:
+    Count backwards from 10 to 1, then say Happy Indep
+
+Tasks:
+
+  Day 14:
+
+    Try Only Pagination Task: Refer the Pagination Image
+      Start the Task and try completing it, On Saturday( 2023-09-02 )
+      Will discuss on the test-case then You can submit the task
+
+      https://docs.google.com/document/d/1O8yVCwB_GaY5rZK1_mNkZ9GeYJLeom_dYmcVN3Mb2ws/edit
+
+      Will explain and help in including test suite - Point 5 in Task Details
+    
+    Rest of the Task You can start on Saturday(2023-09-02) Afternoon
+
+  Day 15: Callback Hell Bakward Counter - Complete and Submit on or Before (2023-09-02) 
+    https://docs.google.com/document/d/1K6jW6TPmqWvzoRAm2t-GlOAxKmMRsLt5zaCsdcH_3LM/edit
+
+Next Session:
+    table creation
+
+    id, class, nested structure, keys to pass test case 
+
+    Discussion for Task
+      Pagination:
+        how to pass test cases
+      calculator:
+        use eval for infx expresiion valuation
+        eval('2+2*(2)');
+
+      Form: 
+        1. How to take form values to JS  
+
+
+    sync operations exectution:
+      Eg: forEach, map, filter, find
+
+    async operations execution ( operation running in background )
+      Eg: setTimout ( wait for sometime to execute )
+          setInterval ( executes frequently after certain interval )
+          element.addEventListner(type, listern: callback);
+
+    Javascript is a single thread 
+    
+    async operations are put into a queue after the wait time/ or completion of action.
+    then js grabs them from the callback queue for execution
+
+    use & purpose of the callback
+
+    callback advantages:
+      1. Modularity / Reusability
+      2. To keep track when to execute what statements as a callback in a asynchronous operation
+
+      asynchronous operation always go for named callback function to keep track
+
+    pain of callback
+      Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code
+
+
