@@ -22,7 +22,7 @@ Topics:
       submit --> form
 
 
-    removeEventListener -- events can only be removed with named callback function
+    removeEventListener -- events can only be removed with named callback function & addeventlistner should also have the named callback function
 
     options in eventListener:
       once: boolean value to tell whether event should execute only once
